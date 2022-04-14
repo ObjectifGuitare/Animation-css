@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* @keyframes h1
 {
     0%   { transform: translateY(0); }
@@ -98,4 +99,36 @@ to {
     -ms-animation: rotating 2s linear infinite;
     -o-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
+}
+
+@keyframes road {
+ 
+0% {
+    background-position: 0 0;
+}
+50% {
+ transform: rotate(90deg);
+ width: 600px;
+ height: 600px;
+}
+100% {
+    background-position: 5000px 0;
+    transform: rotate(0deg);
+    width: 300px;
+    height: 300px;
+}
+}
+
+.road {
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    margin: 0 auto;
+    animation: road 5s  cubic-bezier(0.68, -0.6, 0.32, 1.6)
+    infinite;
+    background-image: url(illu.jpeg);
+    background-size: 200%;
+    border-radius: 50%;
+    animation-delay: -2s;
+    perspective: 800px;
 }
