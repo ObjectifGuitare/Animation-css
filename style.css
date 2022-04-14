@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+body {
+    background-image: url(psych.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: red, green, yellow;
+}
+
+section {
+    animation-duration: 3s;
+    animation-name: cat;
+}
+
+@keyframes cat {
+    from {
+        margin-left: 100%;
+        width: 300px;
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360eg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+ }
+}
+to {
+     margin-left: 0%;
+     width: 100%;
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+     transform: rotate(360deg);
+
+ }
+
+ img {
+     border-radius: 300px;
+     width: 100;
+     height: 100;
+     rotate: 360deg;
+}
+.cat {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
