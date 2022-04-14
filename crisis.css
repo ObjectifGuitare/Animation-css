@@ -1,7 +1,7 @@
 html
 {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(255, 3, 213);
 }
 
@@ -61,4 +61,83 @@ p
 p:active
 {
     display: none;
+}
+
+/* 
+
+
+
+*/
+
+section {
+    animation-duration: 3s;
+    animation-name: cat;
+}
+
+@keyframes cat {
+    from {
+        margin-left: 100%;
+        width: 300px;
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360eg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+ }
+}
+to {
+     margin-left: 0%;
+     width: 100%;
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+     transform: rotate(360deg);
+
+ }
+
+ img {
+     border-radius: 300px;
+     width: 100;
+     height: 100;
+     rotate: 360deg;
+}
+.cat {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes road {
+ 
+0% {
+    background-position: 0 0;
+}
+50% {
+ transform: rotate(90deg);
+ width: 600px;
+ height: 600px;
+}
+100% {
+    background-position: 5000px 0;
+    transform: rotate(0deg);
+    width: 300px;
+    height: 300px;
+}
+}
+
+.road {
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    margin: 0 auto;
+    animation: road 5s  cubic-bezier(0.68, -0.6, 0.32, 1.6)
+    infinite;
+    background-image: url(illu.jpeg);
+    background-size: 200%;
+    border-radius: 50%;
+    animation-delay: -2s;
+    perspective: 800px;
 }
