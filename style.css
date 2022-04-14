@@ -1,0 +1,52 @@
+/* @keyframes h1
+{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+
+h1
+{
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+} */
+
+html
+{
+    margin: 0px;
+    background-image: url("https://thumbs.dreamstime.com/b/red-swirl-background-poster-design-template-abstract-poster-vector-illustration-red-swirl-background-poster-design-template-vector-147941007.jpg");
+}
+
+.salut
+{
+    width: 900px;
+    height: 600px;
+    color: red;
+    display: flex;
+    margin: auto;
+    font-size: 50px;
+    transform: scale(1);
+    text-decoration: none;
+    transition-property: transform;
+    transition-duration: 2s;
+    background-image: url("https://i.ytimg.com/vi/k18GhSbCFuU/maxresdefault.jpg");
+}
+
+span
+{
+    display: none;
+}
+
+.salut:hover {
+    transform: scale(2);
+    padding-top: 700px;
+}
+
+ .salut:hover span
+ {
+     display: block;
+ }
+
+.salut:active
+{
+    transform:rotateX(60deg);
+}
